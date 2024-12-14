@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  autosubdownloader:
+    image: autosubdownloader:latest
+    environment:
+      - MINS=5
+      - LANGUAGES=spa
+    volumes:
+      - /home/saeron/desarrollo/Python/autoSubDownloader/movies:/autoSubDownloader/movies
+      - /home/saeron/desarrollo/Python/autoSubDownloader/tvshows:/autoSubDownloader/tvshows
